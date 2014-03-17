@@ -9,4 +9,6 @@ describe PostsController do
     end
   end
 
+  describe "new post page" do
+  end
 end

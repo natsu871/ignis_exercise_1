@@ -1,1 +1,10 @@
 <h1>Posts#index</h1>
+
+<% unless @posts.blank? %>
+  <ul id="posts_list">
+    <%= render @posts %>
+  </ul>
+  <%= paginate @posts %>
+<% else %>
+  <div id="no_posts">現在、投稿はありません。</div>
+<% end %>

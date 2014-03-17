@@ -1,0 +1,7 @@
+<li>
+  <div class="name"><%= post.name %></div>
+  <div class="body"><%= post.body %></div>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(post.created_at) %> ago.
+  </span>
+</li>

@@ -1,1 +1,20 @@
-<h1>posts#new</h1>
+<h1>Create my post</h1>
+
+<div class="form">
+  <%= form_for(@post) do |f| %>
+
+    <div class="field">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+
+    <div class="field">
+    <%= f.label :body %>
+    <%= f.text_area :body %>
+    </div>
+
+    <div class="submit">
+      <%= f.submit "Create my post", class: "btn btn-large btn-primary" %>
+    </div>
+  <% end %>
+</div>

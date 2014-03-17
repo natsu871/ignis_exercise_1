@@ -3,6 +3,7 @@ IgnisExercise1::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   resources :posts
+  resources :users, :only => [:show]
   root 'posts#index'
 
   # Example of regular route:
